@@ -5,18 +5,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@color/purple_200"
     tools:context=".MainActivity">
 
     <include layout="@layout/toolbar"></include>
 
-    <TextView
+
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="holi World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:text="Select the amount of advice you need D'oh!"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginTop="7dp">
+
+        <Spinner
+
+            android:scrollbarThumbVertical="@color/purple"
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/button"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:text="Ask for advice"
+        android:textColor="@color/purple"
+        android:textSize="18sp"></Button>
+
+    <ListView
+        android:id="@+id/citapj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
 
 </LinearLayout>
